@@ -4,7 +4,9 @@
 <head>
   <title>Sudoku Website Design Meeting</title>
   <meta name="author" content="Anirudh Nayak">
+  <!-- This favicon was sourced from  -->
   <link rel="icon" href="favicon.png">
+
 </head>
 
 <body>
@@ -17,11 +19,11 @@
   <nav>
     Navigation:
     <ul>
-      <a href="#attendance">Attendance</a> <br>
-      <a href="#agenda">Agenda</a> <br>
-      <a href="#framework">Framework Selection</a> <br>
-      <a href="#repo-init">Repository Creation</a> <br>
-      <a href="#high-level">High Level Design</a> <br>
+      <li><a href="#attendance">Attendance</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#framework">Framework Selection</a></li>
+      <li><a href="#repo-init">Repository Creation</a></li>
+      <li><a href="#high-level">High Level Design</a></li>
     </ul>
   </nav>
 
@@ -56,29 +58,37 @@
       <div>Summary of <a href="https://vuejs.org/">Vue</a>:</div>
       <ul>
         <li><b>Pros:</b></li>
-        <ul>
-          <li>Decent developer experience</li>
-          <li>Richer environment</li>
-        </ul>
+        <li>
+          <ul>
+            <li>Decent developer experience</li>
+            <li>Richer environment</li>
+          </ul>
+        </li>
         <li><b>Cons:</b></li>
-        <ul>
-          <li>Overhead from virtual DOM</li>
-          <li>Some boilerplate</li>
-        </ul>
+        <li>
+          <ul>
+            <li>Overhead from virtual DOM</li>
+            <li>Some boilerplate</li>
+          </ul>
+        </li>
       </ul>
       <div>Summary of <a href="https://svelte.dev/">Svelte</a>:</div>
       <ul>
         <li><b>Pros:</b></li>
-        <ul>
-          <li> Great developer experience </li>
-          <li> Similar to vanilla HTML/CSS/JS</li>
-          <li> <em>Compiled</em>, so no virtual DOM</li>
-        </ul>
+        <li>
+          <ul>
+            <li> Great developer experience </li>
+            <li> Similar to vanilla HTML/CSS/JS</li>
+            <li> <em>Compiled</em>, so no virtual DOM</li>
+          </ul>
+        </li>
         <li><b>Cons:</b></li>
-        <ul>
-          <li> Ecosystem is lacking </li>
-          <li> Less industry adoption</li>
-        </ul>
+        <li>
+          <ul>
+            <li> Ecosystem is lacking </li>
+            <li> Less industry adoption</li>
+          </ul>
+        </li>
       </ul>
       <span>We decided to go with <strong>Svelte</strong>.</span>
     </section>
@@ -127,7 +137,7 @@
               <option value="Female">Female</option>
               <option value="Other">Other</option>
               <option value="NA">Prefer not to say</option>
-            </select> 
+            </select>
           </label> <br>
 
           <label>
@@ -146,14 +156,22 @@
           <label>
             Attendance Time: <br>
             1:00 pm<input type="checkbox" name="AttendanceTime" value="1:00 pm">
+          </label>
+          <label>
             2:00 pm<input type="checkbox" name="AttendanceTime" value="2:00 pm">
+          </label>
+          <label>
             3:00 pm<input type="checkbox" name="AttendanceTime" value="3:00 pm">
           </label> <br>
 
           <label>
             Preferred Venue: <br>
             North Hall: <input type="radio" name="PreferredVenue" value="North Hall">
+          </label>
+          <label>
             South Hall: <input type="radio" name="PreferredVenue" value="South Hall">
+          </label>
+          <label>
             No Preference: <input type="radio" name="PreferredVenue" value="No Preference">
           </label> <br>
 
