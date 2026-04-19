@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-# Name of Issue
+## Issue Information
 **Type of Issue**:  Bug | Feature Request
 
 ## Description
