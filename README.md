@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 
 
-URL: [https://a2nayak.github.io/Lab2_Starter/](https://a2nayak.github.io/Lab2_Starter/)
+Site URL: [https://a2nayak.github.io/sp26-cse110-lab3/](https://a2nayak.github.io/sp26-cse110-lab3/)
