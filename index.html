@@ -5,92 +5,99 @@
   <title>Sudoku Website Design Meeting</title>
   <meta name="author" content="Anirudh Nayak">
   <!-- This favicon was sourced from  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.png">
-
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pros-list {
+        grid-area: pros-list;
+        color: lightgreen;
+    }
+    .cons-list {
+        grid-area: cons-list;
+        color: lightcoral;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <h1>Sudoku Website Design Meeting</h1>
-    <h2>High Level Structure</h2>
-    <h3>4/11/2026</h3>
+    <h1 class="title">Sudoku Website Design Meeting</h1>
+    <h2 class="subtitle">High Level Structure</h2> 
+    <span> | </span>
+    <h3 class="date">4/11/2026</h3>
   </header>
-
-  <nav>
-    Navigation:
-    <ul>
-      <li><a href="#attendance">Attendance</a></li>
-      <li><a href="#agenda">Agenda</a></li>
-      <li><a href="#framework">Framework Selection</a></li>
-      <li><a href="#repo-init">Repository Creation</a></li>
-      <li><a href="#high-level">High Level Design</a></li>
-    </ul>
-  </nav>
 
   <hr>
 
   <main>
-    <section>
-      <h4 id="attendance">Attendance:</h4>
-      <ul>
-        <li>Anirudh Nayak</li>
-        <li>Jane Doe</li>
-        <li>Ryan Smith</li>
-        <li>Jason Chen</li>
-        <li>Michelle Huang</li>
-        <li>Eric Nguyen</li>
-      </ul>
+    <section class="logistics">
+      <div id="attendance">
+        <h4>Attendance:</h4>
+        <ul>
+            <li>Anirudh Nayak</li>
+            <li>Jane Doe</li>
+            <li>Ryan Smith</li>
+            <li>Jason Chen</li>
+            <li>Michelle Huang</li>
+            <li>Eric Nguyen</li>
+        </ul>
+      </div>
+      <div id="agenda">
+        <h4>Agenda:</h4>
+        <ol>
+            <li>Decide between Vue and Svelte (unfinished from last meeting) </li>
+            <li>Initialize a repo and invite everyone</li>
+            <li>Discuss high level design of the system</li>
+        </ol>
+      </div>
+      <div id="contents">
+        <h4>Meeting Contents:</h4>
+        <nav>
+            <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#framework">Framework Selection</a></li>
+            <li><a href="#repo-init">Repository Creation</a></li>
+            <li><a href="#high-level">High Level Design</a></li>
+            </ul>
+        </nav>
+      </div>
     </section>
-
-    <section>
-      <h4 id="agenda">Agenda:</h4>
-      <ol>
-        <li>Decide between Vue and Svelte (unfinished from last meeting) </li>
-        <li>Initialize a repo and invite everyone</li>
-        <li>Discuss high level design of the system</li>
-      </ol>
-    </section>
-
     <hr>
-
     <section>
       <h4 id="framework"> Framework: </h4>
-      <div>Summary of <a href="https://vuejs.org/">Vue</a>:</div>
-      <ul>
-        <li><b>Pros:</b></li>
-        <li>
-          <ul>
+      <div class="framework-decision">
+        <p>Summary of <a href="https://vuejs.org/">Vue</a></p>
+        <b>Pros</b>
+        <b>Cons</b>
+        <ul class="pros-list">
             <li>Decent developer experience</li>
             <li>Richer environment</li>
-          </ul>
-        </li>
-        <li><b>Cons:</b></li>
-        <li>
-          <ul>
+        </ul>
+        <ul class="cons-list">
             <li>Overhead from virtual DOM</li>
             <li>Some boilerplate</li>
-          </ul>
-        </li>
-      </ul>
-      <div>Summary of <a href="https://svelte.dev/">Svelte</a>:</div>
-      <ul>
-        <li><b>Pros:</b></li>
-        <li>
-          <ul>
-            <li> Great developer experience </li>
-            <li> Similar to vanilla HTML/CSS/JS</li>
-            <li> <em>Compiled</em>, so no virtual DOM</li>
-          </ul>
-        </li>
-        <li><b>Cons:</b></li>
-        <li>
-          <ul>
-            <li> Ecosystem is lacking </li>
-            <li> Less industry adoption</li>
-          </ul>
-        </li>
-      </ul>
-      <span>We decided to go with <strong>Svelte</strong>.</span>
+        </ul>
+      </div>
+      <div class="framework-decision">
+        <p>Summary of <a href="https://svelte.dev/">Svelte</a></p>
+        <b>Pros</b>
+        <b>Cons</b>
+        <ul class="pros-list">
+            <li>Great developer experience</li>
+            <li>Similar to vanilla HTML/CSS/JS</li>
+            <li><em>Compiled</em>, so no virtual DOM</li>
+        </ul>
+        <ul class="cons-list">
+            <li>Ecosystem is lacking</li>
+            <li>Less industry adoption</li>
+        </ul>
+      </div>
+      
+      <span style="color: aliceblue;">We decided to go with <strong style="font-weight: 600;">Svelte</strong>.</span>
     </section>
 
     <section>
@@ -98,7 +105,7 @@
       <p><i>We finished initializing our repo. This repo is located within our Github team.</i></p>
     </section>
 
-    <section>
+    <section style="position: relative;">
       <h4 id="high-level"> High Level Design: </h4>
 
       <h5>Audio of High Level Design</h5>
@@ -111,9 +118,12 @@
         <source src="media/SudokuDesignVideo.mp4" type="video/mp4">
       </video>
 
-      <h5>Final System Diagram</h5>
-      <img src="media/FinalSudokuDesign.png" alt="[system diagram image]" width=500>
-    </section>
+      <div id="system-diagram">
+        <h5>Final System Diagram</h5>
+        <img src="media/FinalSudokuDesign.png" alt="[system diagram image]" width=500>
+      </div>
+      
+      </section>
   </main>
 
   <hr>
@@ -153,8 +163,8 @@
           Date of Birth: <br>
           <input type="date" name="DateOfBirth"> <br>
 
+          Attendance Time: <br>
           <label>
-            Attendance Time: <br>
             1:00 pm<input type="checkbox" name="AttendanceTime" value="1:00 pm">
           </label>
           <label>
@@ -164,8 +174,8 @@
             3:00 pm<input type="checkbox" name="AttendanceTime" value="3:00 pm">
           </label> <br>
 
+          Preferred Venue: <br>
           <label>
-            Preferred Venue: <br>
             North Hall: <input type="radio" name="PreferredVenue" value="North Hall">
           </label>
           <label>
