@@ -7,6 +7,7 @@
 ### Stand-up
 
 **[ Team Member 1 Name ]**
+
 Progress:
 - [ Bullet points of progress ]
 
@@ -17,6 +18,7 @@ Blockers:
 - [ Bullet points of blockers ]
 
 **[ Team Member 2 Name ]**
+
 Progress:
 - [ Bullet points of progress ]
 
@@ -27,6 +29,7 @@ Blockers:
 - [ Bullet points of blockers ]
 
 **[ Team Member 3 Name ]**
+
 Progress:
 - [ Bullet points of progress ]
 
